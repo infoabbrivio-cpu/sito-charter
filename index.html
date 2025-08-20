@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abbrivio Charter — Esperienze Marine su Misura</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo"></div><h1>Abbrivio Charter</h1></div>
+      <nav class="links">
+        <a href="#home" data-i="nav_home">Home</a>
+        <a href="#fleet" data-i="nav_fleet">Flotta</a>
+        <a href="#services" data-i="nav_services">Servizi</a>
+        <a href="#about" data-i="nav_about">Chi siamo</a>
+        <a href="#booking" data-i="nav_booking">Prenota</a>
+        <a href="#faq" data-i="nav_faq">FAQ</a>
+      </nav>
+      <div class="lang-toggle">
+        <button id="btn-it" class="active">IT</button>
+        <button id="btn-en">EN</button>
+        <button class="burger" id="burger">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="chip" data-i="hero_badge">Nuovo: prenotazioni estate aperte</p>
+        <h2 data-i="hero_title">Vivi il mare come te lo immagini</h2>
+        <ul class="usp">
+          <li data-i="u1">Skipper locali e itinerari wow</li>
+          <li data-i="u2">Cancellazione meteo flessibile</li>
+          <li data-i="u3">Risposte in pochi minuti</li>
+        </ul>
+        <div class="cta">
+          <a href="#booking" class="btn-primary" data-i="cta_primary">Prenota ora</a>
+          <a href="#fleet" class="btn-ghost" data-i="cta_secondary">Scopri la flotta</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="fleet" class="container">
+    <h2 class="section-title" data-i="fleet_title">La nostra flotta</h2>
+    <p class="muted" data-i="fleet_sub">Esempio sezione flotta...</p>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div class="brand"><div class="logo"></div><strong>Abbrivio Charter</strong></div>
+      <p class="small">© <span id="year"></span> Abbrivio</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
