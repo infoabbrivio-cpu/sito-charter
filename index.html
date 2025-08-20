@@ -32,9 +32,9 @@
         <p class="chip" data-i="hero_badge">Nuovo: prenotazioni estate aperte</p>
         <h2 data-i="hero_title">Vivi il mare come te lo immagini</h2>
         <ul class="usp">
-          <li data-i="u1">Skipper locali e itinerari wow</li>
-          <li data-i="u2">Cancellazione meteo flessibile</li>
-          <li data-i="u3">Risposte in pochi minuti</li>
+          <li>Skipper locali e itinerari wow</li>
+          <li>Cancellazione meteo flessibile</li>
+          <li>Risposte in pochi minuti</li>
         </ul>
         <div class="cta">
           <a href="#booking" class="btn-primary" data-i="cta_primary">Prenota ora</a>
@@ -45,14 +45,82 @@
   </main>
 
   <section id="fleet" class="container">
-    <h2 class="section-title" data-i="fleet_title">La nostra flotta</h2>
-    <p class="muted" data-i="fleet_sub">Esempio sezione flotta...</p>
+    <h2 class="section-title">La nostra flotta</h2>
+    <div class="grid cards">
+      <article class="card">
+        <img alt="Sacs 780s" src="https://images.unsplash.com/photo-1521002819180-597f9d3efb77?q=80&w=800&auto=format&fit=crop" />
+        <h3>Sacs 780s</h3>
+        <p class="muted">Gommone spazioso, ideale per escursioni giornaliere · max 12 pax · motore 250HP</p>
+      </article>
+      <article class="card">
+        <img alt="Master 640 Open" src="https://images.unsplash.com/photo-1544551763-7ef4200d2d19?q=80&w=800&auto=format&fit=crop" />
+        <h3>Master 640 Open</h3>
+        <p class="muted">Gommone versatile per mezza giornata · max 8 pax · motore 150HP</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <h2 class="section-title">Servizi</h2>
+    <div class="services">
+      <div class="list">
+        <div class="service"><span>🍾</span><div><strong>Escursione in gommone a Ponza e Palmarola</strong><p class="muted">Giornata intera da Terracina con brindisi incluso.</p></div></div>
+        <div class="service"><span>🌊</span><div><strong>Mezza giornata al Circeo</strong><p class="muted">Tour in gommone lungo il promontorio del Circeo.</p></div></div>
+        <div class="service"><span>🌅</span><div><strong>Tour al tramonto con brindisi</strong><p class="muted">Esperienza unica al calar del sole.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2 class="section-title">Chi siamo</h2>
+    <div class="about">
+      <img alt="Team al molo" src="https://images.unsplash.com/photo-1535086181675-4e93c2f0f9d9?q=80&w=800&auto=format&fit=crop" />
+      <div>
+        <p>Siamo un team giovane con una grande passione per il mare e la voglia di rendere le tue escursioni semplici, divertenti e indimenticabili.</p>
+        <p>La nostra base a Terracina è il punto di partenza ideale per scoprire Ponza, Palmarola e il Circeo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="container booking">
+    <h2 class="section-title">Prenota</h2>
+    <form id="bookingForm">
+      <div class="row">
+        <input name="name" placeholder="Nome" required />
+        <input name="email" type="email" placeholder="Email" required />
+      </div>
+      <div class="row">
+        <input name="date" type="date" />
+        <select name="boat">
+          <option value="Sacs 780s">Sacs 780s</option>
+          <option value="Master 640 Open">Master 640 Open</option>
+        </select>
+      </div>
+      <textarea name="message" rows="4" placeholder="Richieste e dettagli"></textarea>
+      <button type="submit">Richiedi disponibilità</button>
+    </form>
+  </section>
+
+  <section id="reviews" class="container reviews">
+    <h2 class="section-title">Recensioni Google</h2>
+    <div id="reviewsList" class="grid cols-3"></div>
+    <p id="reviewsNote" class="small muted"></p>
+  </section>
+
+  <section id="faq" class="container faq">
+    <h2 class="section-title">FAQ</h2>
+    <div class="grid cols-2">
+      <div class="item"><div class="q"><strong>Serve la patente?</strong><span>+</span></div><div class="a">Solo per barche senza skipper sopra i 40HP. Offriamo skipper locali.</div></div>
+      <div class="item"><div class="q"><strong>Carburante incluso?</strong><span>+</span></div><div class="a">No, viene conteggiato a consumo.</div></div>
+      <div class="item"><div class="q"><strong>Politica meteo</strong><span>+</span></div><div class="a">Se il tempo è sfavorevole riprogrammiamo o rimborsiamo.</div></div>
+      <div class="item"><div class="q"><strong>Cosa portare?</strong><span>+</span></div><div class="a">Costume, crema solare, cappello, documento d'identità.</div></div>
+    </div>
   </section>
 
   <footer>
     <div class="container foot">
       <div class="brand"><div class="logo"></div><strong>Abbrivio Charter</strong></div>
-      <p class="small">© <span id="year"></span> Abbrivio</p>
+      <p class="small">© <span id="year"></span> Abbrivio Charter</p>
     </div>
   </footer>
 
