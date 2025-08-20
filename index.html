@@ -1,104 +1,54 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abbrivio - Esperienze Marine su Misura</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abbrivio — Gommone Experience</title>
+  <meta name="description" content="Escursioni in gommone da Terracina verso Ponza, Palmarola e Circeo. Qualità, sicurezza e coccole in mare. IT/EN." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <img src="assets/logo.png" class="brand-logo" alt="Abbrivio">
-    <nav class="links">
-      <a href="#home" data-i18n="nav.home">Home</a>
-      <a href="#fleet" data-i18n="nav.fleet">Flotta</a>
-      <a href="#services" data-i18n="nav.services">Servizi</a>
-      <a href="#about" data-i18n="nav.about">Chi siamo</a>
-      <a href="#booking" data-i18n="nav.booking">Prenota</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
-      <a href="#reviews" data-i18n="nav.reviews">Recensioni</a>
-    </nav>
-    <div class="lang-switch">
-      <button onclick="setLang('it')">IT</button> | <button onclick="setLang('en')">EN</button>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img class="brand-logo" src="assets/logo.png" alt="Abbrivio — Gommone Experience" />
+      </div>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#fleet">Flotta</a>
+        <a href="#services">Servizi</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#booking">Prenota</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<main id="home" class="hero">
-  <div class="hero-bg">
-    <img src="https://images.unsplash.com/photo-1550952289-d3fa9a1b0d1b?q=80&w=1600&auto=format&fit=crop" alt="Gommone 1">
-    <img src="https://images.unsplash.com/photo-1592105014928-7a6d2f1a6f16?q=80&w=1600&auto=format&fit=crop" alt="Gommone 2">
-    <div class="overlay"></div>
-  </div>
-  <div class="container hero-content">
-    <h1 data-i18n="hero.title">Qualità, sicurezza e coccole in mare</h1>
-    <p data-i18n="hero.sub">Escursioni in gommone da Terracina: Ponza, Palmarola e Circeo.</p>
-    <div class="cta">
-      <a href="#booking" class="btn-primary" data-i18n="hero.cta1">Prenota ora</a>
-      <a href="#services" class="btn-ghost" data-i18n="hero.cta2">Vedi servizi</a>
+  <!-- HERO LANDING -->
+  <main id="home" class="hero hero-landing">
+    <div class="hero-bg">
+      <!-- Immagini dei 2 gommoni (link esterni) -->
+      <img src="https://images.unsplash.com/photo-1550952289-d3fa9a1b0d1b?q=80&w=1600&auto=format&fit=crop" alt="Gommone in mare 1">
+      <img src="https://images.unsplash.com/photo-1592105014928-7a6d2f1a6f16?q=80&w=1600&auto=format&fit=crop" alt="Gommone in mare 2">
+      <div class="overlay"></div>
     </div>
-  </div>
-</main>
+    <div class="container hero-content">
+      <h1 class="hero-title">Qualità, sicurezza e coccole in mare</h1>
+      <p class="hero-sub">Abbrivio ti porta a Ponza, Palmarola e lungo il Circeo con mezzi curati, briefing chiaro e attenzioni che ti fanno sentire ospite speciale.</p>
+      <div class="cta">
+        <a href="#booking" class="btn-primary">Prenota ora</a>
+        <a href="#services" class="btn-ghost">Vedi servizi</a>
+      </div>
+    </div>
+  </main>
 
-<section id="fleet" class="section">
-  <h2 data-i18n="fleet.title">La nostra flotta</h2>
-  <div class="fleet-list">
-    <article>
-      <h3>Sacs 780S</h3>
-      <p data-i18n="fleet.sacs">Gommone spazioso, ideale per escursioni giornaliere.</p>
-    </article>
-    <article>
-      <h3>Master 640 Open</h3>
-      <p data-i18n="fleet.master">Agile e comodo, perfetto per piccole avventure e gruppi ridotti.</p>
-    </article>
-  </div>
-</section>
+  <footer>
+    <div class="container foot">
+      <img class="brand-logo small" src="assets/logo.png" alt="Abbrivio" />
+      <p class="small">© <span id="year"></span> Abbrivio — Gommone Experience</p>
+    </div>
+  </footer>
 
-<section id="services" class="section">
-  <h2 data-i18n="services.title">Servizi</h2>
-  <ul>
-    <li data-i18n="services.ponza">Escursione in gommone di una giornata a Ponza e Palmarola da Terracina con brindisi</li>
-    <li data-i18n="services.circeo">Escursione in gommone di mezza giornata lungo il promontorio del Circeo</li>
-    <li data-i18n="services.tramonto">Tour in gommone al tramonto con brindisi</li>
-    <li data-i18n="services.stagionali">Noleggi stagionali</li>
-    <li data-i18n="services.giornalieri">Noleggi giornalieri</li>
-  </ul>
-</section>
-
-<section id="about" class="section">
-  <h2 data-i18n="about.title">Chi siamo</h2>
-  <p data-i18n="about.text">Abbrivio nasce dalla passione per il mare e dalla voglia di offrire esperienze autentiche e sicure.</p>
-</section>
-
-<section id="booking" class="section">
-  <h2 data-i18n="booking.title">Prenota</h2>
-  <form>
-    <input type="text" placeholder="Nome" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Messaggio"></textarea>
-    <button type="submit" class="btn-primary" data-i18n="booking.submit">Invia</button>
-  </form>
-</section>
-
-<section id="faq" class="section">
-  <h2>FAQ</h2>
-  <details><summary data-i18n="faq.q1">Serve patente nautica?</summary><p data-i18n="faq.a1">No, i nostri skipper pensano a tutto.</p></details>
-  <details><summary data-i18n="faq.q2">Cosa devo portare?</summary><p data-i18n="faq.a2">Costume, crema solare e voglia di divertirti!</p></details>
-</section>
-
-<section id="reviews" class="section">
-  <h2 data-i18n="reviews.title">Recensioni</h2>
-  <div id="google-reviews">Caricamento recensioni...</div>
-</section>
-
-<footer>
-  <div class="container foot">
-    <img src="assets/logo.png" class="brand-logo small" alt="Abbrivio">
-    <p>© <span id="year"></span> Abbrivio</p>
-  </div>
-</footer>
-
-<script>window.GOOGLE_API_KEY="AIzaSyAkXWfoORutMkQ_OgMEBkytEE2rz2YW7Fw";window.GOOGLE_PLACE_ID="ChIJ795NTWpD84oRm0kMkwRbmBg";</script>
-<script src="app.js"></script>
-</body></html>
+  <script src="app.js"></script>
+</body>
+</html>
